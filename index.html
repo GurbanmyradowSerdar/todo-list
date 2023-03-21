@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="load()" onbeforeunload="save()">
+    <div class="form">
+      <div class="form__content">
+        <h1 class="form__title">to-do list</h1>
+        <div class="form__input-box">
+          <input
+            type="text"
+            class="form__input"
+            id="input"
+            placeholder="new task"
+          />
+          <a href="#" class="form__button-add" onclick="add()">add</a>
+        </div>
+        <div id="tasks" class="form__check-box"></div>
+        <button class="form__clear" id="clear">Clear</button>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
